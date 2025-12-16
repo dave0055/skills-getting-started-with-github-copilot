@@ -164,7 +164,9 @@ footer {
 }
 
 .participants-list li {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background-color: #eef3ff;
   color: #1a237e;
   padding: 6px 10px;
@@ -172,6 +174,24 @@ footer {
   font-size: 13px;
   line-height: 1;
   border: 1px solid rgba(26, 35, 126, 0.08);
+}
+
+.remove-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 6px;
+  border-radius: 50%;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-participant:hover {
+  background-color: rgba(198, 40, 40, 0.08);
 }
 
 .no-participants {
